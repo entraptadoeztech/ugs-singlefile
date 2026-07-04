@@ -74,7 +74,9 @@
       <button id="startButton">PLAY</button>
     </div>
     <script>
-    alert("Thank you for playing Famidash E-Sides. These levels are not known whether they are humanly possible. Please play at least the regular Famidash (1.2.8) and B-Sides before attempting this. As it is not yet known if these can be beaten by a human, it is recommended to configure the slow option in the emulator. You may dismiss this message to continue.");
+      alert(
+        "Thank you for playing Famidash E-Sides. These levels are not known whether they are humanly possible. Please play at least the regular Famidash (1.2.8) and B-Sides before attempting this. As it is not yet known if these can be beaten by a human, it is recommended to configure the slow option in the emulator. You may dismiss this message to continue.",
+      );
       document.getElementById("game").style.display = "none";
       function startGame() {
         document.getElementById("game").style.display = "block";
@@ -83,7 +85,7 @@
         EJS_core = "nes";
         EJS_color = "#000000";
         EJS_startOnLoaded = true;
-        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/";
         EJS_gameUrl =
           "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/nes/famidash.e-sides.nes.zip";
         loadGame();
@@ -93,7 +95,8 @@
         .addEventListener("click", startGame);
       function loadGame() {
         var script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+        script.src =
+          "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/loader.js";
         document.body.appendChild(script);
       }
     </script>

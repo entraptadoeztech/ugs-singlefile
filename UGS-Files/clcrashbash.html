@@ -1,5 +1,5 @@
 <html>
-<head> 
+  <head>
     <script>
       window.gameconfig = {
         name: "Crash Bash",
@@ -35,12 +35,12 @@
       function getParts(file, start, end) {
         let parts = [];
         for (let i = start; i <= end; i++) {
-          let padded = String(i).padStart((end+"").length, '0');
+          let padded = String(i).padStart((end + "").length, "0");
           parts.push(file + ".part" + padded);
         }
         return parts;
       }
-getParts("asd.js", 0, 100)
+      getParts("asd.js", 0, 100);
     </script>
     <style>
       body,
@@ -81,7 +81,7 @@ getParts("asd.js", 0, 100)
       var parts = getParts(
         window.gameconfig.url,
         window.gameconfig.min,
-        window.gameconfig.max
+        window.gameconfig.max,
       );
       var totalParts = parts.length;
 
@@ -103,11 +103,11 @@ getParts("asd.js", 0, 100)
           EJS_gameName = window.gameconfig.name;
           EJS_color = "#0064ff";
           EJS_startOnLoaded = true;
-          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/";
           EJS_gameUrl = gameUrl;
           const script = document.createElement("script");
           script.src =
-            "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+            "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/loader.js";
           document.body.appendChild(script);
         })
         .catch((error) => {
@@ -117,4 +117,4 @@ getParts("asd.js", 0, 100)
         });
     </script>
   </body>
-</html> 
+</html>

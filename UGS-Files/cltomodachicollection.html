@@ -1,5 +1,4 @@
-
-<!-- Ultimate Game Stash file--> 
+<!-- Ultimate Game Stash file-->
 <!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
 <!-- Made by Genizy -->
 <!-- This game runs at about 2/3 speed in any 3D section. It is recommended to download the ROM and play it on a different emulator if possible. You can download the game at https://files.catbox.moe/2uun2v.7z -->
@@ -9,7 +8,7 @@
     <script>
       window.gameconfig = {
         name: "Tomodachi Collection",
-        url: "https://cdn.jsdelivr.net/gh/genizy/emujs@main/tomodachi-collection/tomodashi-collection-english.7z",
+        url: "https://cdn.jsdelivr.net/gh/lort3453s/emujs@main/tomodachi-collection/tomodashi-collection-english.7z",
         core: "nds",
         min: 1,
         max: 2,
@@ -85,7 +84,7 @@
       var parts = getParts(
         window.gameconfig.url,
         window.gameconfig.min,
-        window.gameconfig.max
+        window.gameconfig.max,
       );
       var totalParts = parts.length;
 
@@ -107,11 +106,11 @@
           EJS_gameName = window.gameconfig.name;
           EJS_color = "#0064ff";
           EJS_startOnLoaded = true;
-          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/";
           EJS_gameUrl = gameUrl;
           const script = document.createElement("script");
           script.src =
-            "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+            "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/loader.js";
           document.body.appendChild(script);
         })
         .catch((error) => {

@@ -5,7 +5,9 @@
   <head>
     <script src="//www.google.com/jsapi"></script>
     <script>
-        alert("Known issue: this arcade game is intentionally rotated. To fix this, enter the graphics settings and change the video rotation to 270 deg. Make sure to set it back to 0 when playing a different game.");
+      alert(
+        "Known issue: this arcade game is intentionally rotated. To fix this, enter the graphics settings and change the video rotation to 270 deg. Make sure to set it back to 0 when playing a different game.",
+      );
       window.parent.maeExportApis_();
     </script>
 
@@ -83,7 +85,7 @@
         EJS_core = "arcade";
         EJS_color = "#000000";
         EJS_startOnLoaded = true;
-        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/";
         EJS_gameUrl =
           "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/mame/frogger.zip";
         loadGame();
@@ -93,7 +95,8 @@
         .addEventListener("click", startGame);
       function loadGame() {
         var script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+        script.src =
+          "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/loader.js";
         document.body.appendChild(script);
         var script = document.createElement("script");
         script.src =

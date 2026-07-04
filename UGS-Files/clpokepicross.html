@@ -75,7 +75,9 @@
       <button id="startButton">PLAY</button>
     </div>
     <script>
-    alert("Please note: this game never received an official release anywhere. Expect to find possible glitches. This game was released unofficially and was also translated unofficially. Do not report any bugs that may happen in this game. Please click OK or Continue if you are ok with this.");
+      alert(
+        "Please note: this game never received an official release anywhere. Expect to find possible glitches. This game was released unofficially and was also translated unofficially. Do not report any bugs that may happen in this game. Please click OK or Continue if you are ok with this.",
+      );
       document.getElementById("game").style.display = "none";
       function startGame() {
         document.getElementById("game").style.display = "block";
@@ -84,7 +86,7 @@
         EJS_core = "gba";
         EJS_color = "#000000";
         EJS_startOnLoaded = true;
-        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/";
         EJS_gameUrl =
           "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Pokemon_Picross_(English_v1.0).7z";
         loadGame();
@@ -94,7 +96,8 @@
         .addEventListener("click", startGame);
       function loadGame() {
         var script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+        script.src =
+          "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/loader.js";
         document.body.appendChild(script);
       }
     </script>

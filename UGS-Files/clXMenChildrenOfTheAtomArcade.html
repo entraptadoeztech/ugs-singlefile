@@ -1,7 +1,7 @@
 <html>
   <!-- Ultimate Game Stash file-->
   <!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
-<!-- Known issue: As of when I type this, jsdelivr isn't serving the correct file so it will throw an error saying that there are files that aren't found. This is an issue on jsdelivr's side that will resolves itself in time -->
+  <!-- Known issue: As of when I type this, jsdelivr isn't serving the correct file so it will throw an error saying that there are files that aren't found. This is an issue on jsdelivr's side that will resolves itself in time -->
 
   <head>
     <script src="//www.google.com/jsapi"></script>
@@ -83,7 +83,7 @@
         EJS_core = "fbneo";
         EJS_color = "#000000";
         EJS_startOnLoaded = true;
-        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+        EJS_pathtodata = "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/";
         EJS_gameUrl =
           "https://cdn.jsdelivr.net/gh/ap-math-class/exams@latest/mame/xmcota.zip";
         loadGame();
@@ -93,7 +93,8 @@
         .addEventListener("click", startGame);
       function loadGame() {
         var script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+        script.src =
+          "https://cdn.jsdelivr.net/gh/lort3453s/emu@master/loader.js";
         document.body.appendChild(script);
         var script = document.createElement("script");
         script.src =
